@@ -2,6 +2,7 @@
 Priority Nonpreemptive Scheduling algorithm where each process is assigned a priority, and the CPU selects the process with the highest priority (usually the smallest priority number) to execute first.
 
 ## Features 
+**Process**
 - The Process class is used to define each process with attributes such as:
   - `pid`: The process ID (like "A", "B", etc.).
   - `arrival_time`: The time when the process arrives (i.e., when it’s ready to execute).

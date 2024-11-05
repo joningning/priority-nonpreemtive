@@ -9,7 +9,7 @@ Priority Nonpreemptive Scheduling algorithm where each process is assigned a pri
   - `priority`: The priority value of the process (lower values have higher priority).
   - `completion_time`, `turnaround_time`, `waiting_time`, and `start_time`: These are placeholders for the metrics we calculate during the scheduling process.
 
- ## calculate_priority_non_preemptive
+ **calculate_priority_non_preemptive**
  - This function implements the Priority Non-Preemptive Scheduling algorithm.
      -Sorting: First, we sort the processes by their arrival time so we know which processes are available for execution at any given time.
      - Ready Queue: We check which processes have arrived by the current time and add them to the ready queue.
@@ -18,7 +18,7 @@ Priority Nonpreemptive Scheduling algorithm where each process is assigned a pri
      - Start Time & Completion Time: The start time of a process is when the CPU begins executing it, which is the current time (or the completion time of the last process). After execution, we calculate the completion time by adding the burst time to the start time.
      - Completion: Once the process is done, we remove it from the process list and add it to the completed_processes list.
 
-  ## display_gantt_chart 
+  **display_gantt_chart** 
   - This function displays a Gantt chart showing the execution timeline of the processes.
   - start_times: This list contains the start times of each process.
   - process_names: This list contains the names (IDs) of the processes.
@@ -26,7 +26,7 @@ Priority Nonpreemptive Scheduling algorithm where each process is assigned a pri
   - Text on Gantt Chart: The text shows the start time of each process on the Gantt chart.
   - Finally, the Gantt chart is displayed using `plt.show()`.
 
-  ## print_process_summary
+  **print_process_summary**
   - This function prints a summary of each process.
     - Process ID
     - Arrival Time
@@ -36,11 +36,11 @@ Priority Nonpreemptive Scheduling algorithm where each process is assigned a pri
     - Turnaround Time
     - Waiting Time
       
-  ## calculate_average_waiting_time
+  **calculate_average_waiting_time**
   - This function calculates the average waiting time across all processes
       - It sums up the waiting times of all processes and then divides by the number of processes to get the average.
 
-  ## main 
+  **main**
   - The `main` function handles the user input and drives the program.
   - Input: The user is prompted to enter the number of processes and their details (arrival time, burst time, and priority).
   - Calling Functions: The function then calls the `calculate_priority_non_preemptive` function to perform the scheduling, and displays the Gantt chart and process summary.
